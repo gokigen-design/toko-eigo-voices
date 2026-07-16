@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>受講生の声｜30日間音声プログラム</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pink-deep:#c96b8a;
+    --pink-main:#d98aa3;
+    --pink-dusty:#e6b8c4;
+    --pink-pale:#f7e9ec;
+    --pink-bg:#fdf6f7;
+    --text-main:#4a3a3f;
+    --text-sub:#8a7075;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Yu Gothic",sans-serif;
+    font-weight:500;
+    background:var(--pink-bg);
+    color:var(--text-main);
+    font-size:16px;
+    line-height:1.8;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:0 20px 80px;}
+
+  /* header */
+  header{
+    background:linear-gradient(160deg,var(--pink-deep),var(--pink-main) 60%,var(--pink-dusty));
+    color:#fff;
+    padding:48px 20px 56px;
+    text-align:center;
+    border-radius:0 0 32px 32px;
+  }
+  header .eyebrow{
+    display:inline-block;
+    background:rgba(255,255,255,0.25);
+    padding:6px 18px;
+    border-radius:999px;
+    font-size:13px;
+    letter-spacing:.05em;
+    margin-bottom:16px;
+  }
+  header h1{
+    font-size:26px;
+    font-weight:700;
+    margin:0 0 12px;
+    line-height:1.6;
+  }
+  header p{
+    font-size:14.5px;
+    margin:0;
+    opacity:.95;
+  }
+
+  /* host (トコさん) */
+  .host-card{
+    background:#fff;
+    border-radius:20px;
+    padding:20px 22px;
+    margin:-30px 0 16px;
+    box-shadow:0 6px 20px rgba(201,107,138,0.12);
+    display:flex;
+    align-items:center;
+    gap:16px;
+  }
+  .host-photo{
+    width:72px;
+    height:72px;
+    border-radius:50%;
+    background:var(--pink-pale);
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+  }
+  .host-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+  .host-name{
+    font-weight:700;
+    font-size:15px;
+    color:var(--pink-deep);
+    margin-bottom:4px;
+  }
+  .host-text p{
+    margin:0;
+    font-size:13.5px;
+    line-height:1.7;
+    color:var(--text-sub);
+  }
+
+  /* intro */
+  .intro{
+    background:#fff;
+    border-radius:20px;
+    padding:24px 22px;
+    margin:0 0 32px;
+    box-shadow:0 6px 20px rgba(201,107,138,0.12);
+    font-size:14.5px;
+    color:var(--text-sub);
+  }
+
+  /* section title */
+  .section-title{
+    text-align:center;
+    margin:44px 0 24px;
+  }
+  .section-title span{
+    display:inline-block;
+    font-size:19px;
+    font-weight:700;
+    color:var(--pink-deep);
+    border-bottom:3px solid var(--pink-dusty);
+    padding-bottom:6px;
+  }
+
+  /* voice card */
+  .voice-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+  }
+  .voice-card{
+    background:#fff;
+    border-radius:18px;
+    padding:20px 20px 22px;
+    box-shadow:0 4px 14px rgba(201,107,138,0.10);
+    position:relative;
+  }
+  .voice-head{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:12px;
+  }
+  .avatar{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .voice-name{
+    font-weight:700;
+    font-size:15px;
+    color:var(--text-main);
+  }
+  .voice-tag{
+    display:inline-block;
+    background:var(--pink-pale);
+    color:var(--pink-deep);
+    font-size:12px;
+    font-weight:600;
+    padding:2px 10px;
+    margin-left:-10px;
+    border-radius:999px;
+    margin-top:4px;
+  }
+  .voice-text{
+    font-size:14.5px;
+    font-weight:500;
+    line-height:1.85;
+    color:var(--text-main);
+  }
+  .voice-text mark{
+    background:rgba(255,241,110,0.5);
+    color:var(--text-main);
+    font-weight:700;
+    line-height:1;
+    padding:0 1px;
+    border-radius:2px;
+    box-decoration-break:clone;
+    -webkit-box-decoration-break:clone;
+  }
+
+  footer{
+    text-align:center;
+    font-size:12px;
+    color:var(--text-sub);
+    margin-top:50px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="eyebrow">30日間音声プログラム</span>
+  <h1>先行で聴いてくださった<br>受講生さんの声</h1>
+  <p>迷いながらおうち英語を続けてきた受講生さんの、<br>「おうち英語の考え方」と「毎日の取り組み方」が<br>どう変わったかをご紹介します</p>
+</header>
+
+<div class="wrap">
+
+  <!--
+  非公開中：トコさんの紹介カード（メッセージ文が私の考えた仮文言のため、トコさんの確認・執筆待ち）
+  <div class="host-card">
+    <div class="host-photo">
+      <img src="toko-photo.jpg" alt="トコさん" onerror="this.parentElement.innerHTML='<svg width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 24 24&quot;><circle cx=&quot;12&quot; cy=&quot;8&quot; r=&quot;4&quot; fill=&quot;%23c96b8a&quot;/><path d=&quot;M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7&quot; fill=&quot;%23c96b8a&quot;/></svg>'">
+    </div>
+    <div class="host-text">
+      <div class="host-name">とこ先生</div>
+      <p>先行配信で、たくさんの「これなら続けられる」という声をいただきました。実際の感想をご紹介します。</p>
+    </div>
+  </div>
+  -->
+
+  <div class="intro">
+    ここに並んでいるのは、実際に先行で音声プログラムを聴いてくださった受講生さんたちの感想です。全員の状況が同じというわけではありませんが、「うちと同じかも」と思える声がきっと見つかります。
+  </div>
+
+  <div class="section-title"><span>受講生さんの声</span></div>
+
+  <div class="voice-list">
+
+    <div class="voice-card">
+      <div class="voice-head">
+        <div class="avatar" style="background:#f3d1dc;">
+          <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="#c96b8a"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="#c96b8a"/></svg>
+        </div>
+        <div>
+          <div class="voice-name">Yさん</div>
+          <span class="voice-tag">2023年生まれ・男の子のママ</span>
+        </div>
+      </div>
+      <div class="voice-text">
+        1日目から欠かさず聞いています。他のママの「これで成功した」という発信を見るたびに悩んでいましたが、とこさんのお話は母語の大切さや試行錯誤も含めて伝えてくれるので、<mark>「何をすればいいか」より「なぜそう考えるのか」が腑に落ちる</mark>感覚がありました。30日で英語を教わるというより、これから何年も迷ったときに立ち返れる<mark>「わが家の判断軸」</mark>を育ててもらっている気がしています。
+      </div>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-head">
+        <div class="avatar" style="background:#e8d5c4;">
+          <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="#b98a63"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="#b98a63"/></svg>
+        </div>
+        <div>
+          <div class="voice-name">Cさん</div>
+          <span class="voice-tag">10歳・男の子のママ</span>
+        </div>
+      </div>
+      <div class="voice-text">
+        まさに、迷っていた頃の自分に聞かせてあげたい内容でした。スーパーキッズと我が子を比べて焦り、<mark>取り組みの軸がブレて、やり方をコロコロ変えていた</mark>過去を思い出しました。10年20年後を見据えられず、子どもにとっても楽しくない時間だったなと、振り返って感じます。
+      </div>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-head">
+        <div class="avatar" style="background:#f3d1dc;">
+          <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="#c96b8a"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="#c96b8a"/></svg>
+        </div>
+        <div>
+          <div class="voice-name">Mさん</div>
+          <span class="voice-tag">4歳・女の子のママ</span>
+        </div>
+      </div>
+      <div class="voice-text">
+        軸ができて迷わなくなり、親子で英語時間を楽しめるようになったことが大きな変化でした。以前は迷路の中を彷徨っている感じでしたが、今は前に進んでいる実感があります。<mark>絵本を軸にしたおうち英語は、私が負担なく楽しみながら取り組めることが継続につながっている</mark>と、5ヶ月間を振り返って改めて思いました。
+      </div>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-head">
+        <div class="avatar" style="background:#d8c4e8;">
+          <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="#8a63b9"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="#8a63b9"/></svg>
+        </div>
+        <div>
+          <div class="voice-name">Yさん</div>
+          <span class="voice-tag">6歳・2歳／女の子のママ</span>
+        </div>
+      </div>
+      <div class="voice-text">
+        親とのふれあいや親の声が質に繋がるということに、今はすごく納得しています。その場で教えなくても、<mark>覚えて読める文章が増え</mark>、親子でますます楽しめるようになりました。音声だけを聞かせたり、単調な読み方をしていたら、こうはならなかっただろうなと感じています。
+      </div>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-head">
+        <div class="avatar" style="background:#f3d1dc;">
+          <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="#c96b8a"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="#c96b8a"/></svg>
+        </div>
+        <div>
+          <div class="voice-name">Sさん</div>
+          <span class="voice-tag">8歳・3歳／男の子のママ</span>
+        </div>
+      </div>
+      <div class="voice-text">
+        おうち英語は正解が一つではないからこそ、先が見えず不安になったり、SNSで見かける他のお子さんの英語力と比べて焦ってしまったり…。だからこそ<mark>「5年後、10年後を見据えて言語能力を育てる」</mark>というお話にとても共感しました。毎日の絵本の読み聞かせのおかげで、英語力だけでなく<mark>親子で寄り添う時間そのものが愛情を育む時間</mark>になったと感じています。
+      </div>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-head">
+        <div class="avatar" style="background:#e8d5c4;">
+          <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="#b98a63"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="#b98a63"/></svg>
+        </div>
+        <div>
+          <div class="voice-name">Tさん</div>
+          <span class="voice-tag">11歳・6歳／男女のママ</span>
+        </div>
+      </div>
+      <div class="voice-text">
+        改めて絵本の読み聞かせの良さを感じました。とこさんの実体験のお話は、初めて聞いたときからずっと印象に残っています。ネットのスーパーキッズを見て<mark>「オールイングリッシュの方がいいのでは」と思っていた時期がありましたが、それが危ういことに気づかされました</mark>。
+      </div>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-head">
+        <div class="avatar" style="background:#d8c4e8;">
+          <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="#8a63b9"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="#8a63b9"/></svg>
+        </div>
+        <div>
+          <div class="voice-name">Eさん</div>
+          <span class="voice-tag">7歳・女の子のママ</span>
+        </div>
+      </div>
+      <div class="voice-text">
+        娘にはベースの日本語を大切にしつつ、<mark>絵本の読み聞かせを軸に</mark>、ゆっくりいつか多読に進んでいければいいなと思っています。
+      </div>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-head">
+        <div class="avatar" style="background:#f3d1dc;">
+          <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="#c96b8a"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="#c96b8a"/></svg>
+        </div>
+        <div>
+          <div class="voice-name">Yさん</div>
+          <span class="voice-tag">3歳・男の子のママ</span>
+        </div>
+      </div>
+      <div class="voice-text">
+        おうち英語の初心に戻れると同時に、子育て全般に通じる教訓だと感じました。<mark>小学校低学年までに土台を作ることの大切さ</mark>に気づかされ、子どもとの時間、今しか呼んでくれない「お母さん」という時間を大切にしたいと改めて思いました。
+      </div>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-head">
+        <div class="avatar" style="background:#e8d5c4;">
+          <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="#b98a63"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="#b98a63"/></svg>
+        </div>
+        <div>
+          <div class="voice-name">Sさん</div>
+          <span class="voice-tag">6歳・4歳／男の子のママ</span>
+        </div>
+      </div>
+      <div class="voice-text">
+        この1年半で息子が少しずつ力をつけ始めたのを見て、当時の自分に<mark>「短期じゃなくて長期で見てね」</mark>と伝えたくなりました。フォニックス講座の反復や地道な積み重ねが息子の気質に合っていたようで、日常で目にする単語を自発的に読み始めています。
+      </div>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-head">
+        <div class="avatar" style="background:#d8c4e8;">
+          <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="#8a63b9"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="#8a63b9"/></svg>
+        </div>
+        <div>
+          <div class="voice-name">Aさん</div>
+          <span class="voice-tag">8歳・6歳／男女のママ</span>
+        </div>
+      </div>
+      <div class="voice-text">
+        私自身、小さい頃から英語漬けにすればいいと思っていましたが、そうじゃない。<mark>母語が大切なんだ</mark>ということに、とこさんと出会ってから気づかされました。<mark>「豊かな言葉は家庭の中で育つ」</mark>という言葉が、まさにその通りだと実感しています。
+      </div>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-head">
+        <div class="avatar" style="background:#f3d1dc;">
+          <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="#c96b8a"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="#c96b8a"/></svg>
+        </div>
+        <div>
+          <div class="voice-name">Wさん</div>
+          <span class="voice-tag">6歳・4歳／女の子のママ</span>
+        </div>
+      </div>
+      <div class="voice-text">
+        周りと比べず、自分のペースで少しずつおうち英語を進められるようになりました。以前より読み聞かせの冊数は減っても、<mark>いろんな情報に惑わされず、我が家に合ったやり方を身につけた</mark>からこそ、今のペースで落ち着いていられるんだと思います。
+      </div>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-head">
+        <div class="avatar" style="background:#e8d5c4;">
+          <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="#b98a63"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="#b98a63"/></svg>
+        </div>
+        <div>
+          <div class="voice-name">Aさん</div>
+          <span class="voice-tag">6歳・0歳／男女のママ</span>
+        </div>
+      </div>
+      <div class="voice-text">
+        インプット2000時間になればペラペラになる、そう思っていたのは大きな勘違いでした。<mark>継続できる量で、親子どちらにもプレッシャーにならない程度に、長く続けていくこと</mark>が大切だと再認識しました。そして一番ハッとしたのは、<mark>親の声の読み聞かせを嫌がる子は1人もいない</mark>ということです。
+      </div>
+    </div>
+
+  </div>
+
+  <footer>おうち英語 30日間音声プログラム</footer>
+
+</div>
+
+</body>
+</html>
